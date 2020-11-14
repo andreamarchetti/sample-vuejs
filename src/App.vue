@@ -8,6 +8,7 @@
           class="font-bold bg-clip-text text-transparent bg-gradient-to-br from-blue-400 via-purple-400 to-blue-500"
         >DigitalOcean</span>
       </h3>
+      -- {{ message }}
 
       <div class="flex justify-center space-x-2 mt-6 lg:mt-10">
         <a
@@ -26,6 +27,9 @@
 <script>
 export default {
   name: "App",
+  data: () => {
+    return { message: process.env }
+  }
 };
 </script>
 

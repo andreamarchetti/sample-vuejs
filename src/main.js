@@ -4,6 +4,10 @@ import './assets/index.css';
 
 Vue.config.productionTip = false
 
+console.log(process.env.NODE_ENV)
+console.log(process.env)
+
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  el: "#app",
+  render: h => h(App)
+})
